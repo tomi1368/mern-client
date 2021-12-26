@@ -1,0 +1,18 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.form input{
+    padding: 5px 10px;
+}
+
+.form input[type="submit"]{
+    background-color: rgb(110, 20, 110);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
