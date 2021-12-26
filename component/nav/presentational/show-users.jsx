@@ -9,7 +9,7 @@ const ShowUsers = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4001/api/users/")
+      .get("https://crud-tomas.herokuapp.com/api/users")
       .then((res) => {
         setUsuarios(res.data);
         

@@ -15,7 +15,7 @@ const CreateUser = ({ modifyUsers }) => {
   const addUser = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4001/api/users/", usuario)
+      .post("https://crud-tomas.herokuapp.com/api/users", usuario)
       .then((res) => {
         modifyUsers(res.data);
         useNavigate("/");

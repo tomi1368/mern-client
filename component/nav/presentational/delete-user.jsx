@@ -14,7 +14,7 @@ const DeleteUser = ({ modifyUsers }) => {
       e.preventDefault();
     }
     axios
-      .delete("http://localhost:4001/api/users/", {
+      .delete("https://crud-tomas.herokuapp.com/api/users", {
           data:{
               email
           }

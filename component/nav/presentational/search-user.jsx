@@ -10,7 +10,7 @@ const SearchUser = () => {
       e.preventDefault();
     }
     axios
-      .get(`http://localhost:4001/api/users/${name}`)
+      .get(`https://crud-tomas.herokuapp.com/api/users/${name}`)
       .then((res) => {
         let response = res.data;
         console.log(response)

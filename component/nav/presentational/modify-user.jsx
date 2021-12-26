@@ -13,7 +13,7 @@ const ChangeUser = () => {
   }
   const mdfUser = (e)=>{
     {e.preventDefault()}
-    axios.put("http://localhost:4001/api/users/",usuario)
+    axios.put("https://crud-tomas.herokuapp.com/api/users/",usuario)
     .then(res=>useNavigate("/"))
     .catch(err=>console.log("hola2"))
   }
